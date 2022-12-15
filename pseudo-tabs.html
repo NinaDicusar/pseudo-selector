@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Pseudo selector</title>
+    <style>
+        .tabs{
+           list-style: none;
+           margin: 40px; 
+           padding: 10px;
+           border:5px solid #bbb;
+           text-align: center;
+           border-radius: 5px;
+           background-color:azure ;
+        }
+                                        
+           .tabs-item:hover{
+            background-color: #999;
+        }
+        .tabs-item{
+            border:1px solid #ccc;
+            display: inline-block;
+            margin:5px;
+            padding: 10px;
+
+            width: 70px;
+            height: 80px;
+            vertical-align: top;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.25s;
+            }
+            .username, .facebook, .instagram{
+               text-decoration:none ;
+               color:#222; 
+            }
+            .tabs-option1, .tabs-option2, .tabs-option3 {
+                font-size: 32px;
+                line-height: 5px;
+            
+                background-color: #999;
+                width: 32px;
+                height: 32px;
+                border-radius: 32px;
+                transform:translateX(46px) translateY(-78px);
+                
+                opacity:0 ;
+                transition: 0.1s;}
+            
+            .tabs-option1:hover, .tabs-option2:hover, .tabs-option3:hover {
+                opacity: 1.0;
+            }
+
+    </style>
+</head>
+<body>
+    <ul class="tabs">
+        <li class="tabs-item"> 
+           <a class="username" href="#">
+            <img src="https://icons.iconarchive.com/icons/designbolts/free-cute-shaded-social/48/Github-icon.png" >
+             <br>github
+           </a>
+           <div class="tabs-option1">.<br>.<br>.</div> 
+        </li>
+        <li class="tabs-item">
+            <a class="facebook" href="#">
+                <img src="https://icons.iconarchive.com/icons/emey87/social-button/48/facebook-icon.png">facebook
+             </a>
+             <div class="tabs-option2">.<br>.<br>.</div>
+        
+        <li class="tabs-item">
+            <a class="instagram" href="#">
+                <img src="https://icons.iconarchive.com/icons/artcore-illustrations/artcore-4/48/insagram-icon.png">instagram
+            </a>
+            <div class="tabs-option3">.<br>.<br>.</div> 
+        </li>
+    </ul>
+</body>
+</html>
